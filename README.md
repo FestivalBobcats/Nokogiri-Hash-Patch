@@ -8,6 +8,7 @@ Usage
 
     require 'nokogiri'
     require 'open-uri'
+    require 'nokogiri_hash'
 
     url = 'http://www.w3schools.com/xml/simple.xml'
     xml = Nokogiri::XML(open(url))
