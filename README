@@ -1,0 +1,18 @@
+<h3>A Nokogiri patch for creating a hash!</h3>
+<br />
+<p>Just drop it in your rails lib folder or require it in your project.</p>
+<br />
+<h3>Usage</h3>
+<br />
+<code>
+  require 'nokogiri'
+  require 'open-uri'
+  
+  url = 'http://www.w3schools.com/xml/simple.xml'
+  xml = Nokogiri::XML(open(url))
+  hash = xml.to_hash
+  
+  # check it out formatted in irb with:
+  
+  y hash
+</code>
